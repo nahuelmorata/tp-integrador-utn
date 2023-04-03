@@ -52,6 +52,8 @@ footer{
     background-color: rgb(3, 3, 75);
     padding: 20px;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .Tienda , .Atencion{
@@ -60,11 +62,10 @@ footer{
     padding-top: 15px;
 }
 
-footer div, a{
+/*footer div, */a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 footer a{
@@ -76,4 +77,21 @@ footer p{
     padding-top: 20px;
     text-align: center;
     color:white;
+}
+
+.fila {
+    display: flex;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna.ancho-posible {
+    flex-grow: 1;
+}
+
+.centrado-horizontal-flex {
+    justify-content: center;
 }
