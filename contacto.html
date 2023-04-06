@@ -20,12 +20,22 @@
     
     <main>
         <h2>Comunicate con nosotros</h2>
-        <form>
-            <input type="text" name="Nombre" id="ind"> Nombre
-            <input type="email" name="Email" id="ind"> Mail
-            <input type="tel" name="telefono" id="ind"> telefono
-            <input type="button" value="enviar">
+        <form id="formularioContacto">
+            <div class="inputContainer">
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Fernandez">
+            </div>
+            <div class="inputContainer">
+                <label for="email">Ingrese su email:</label>
+                <input type="text" id="email" name="email" placeholder="asd@asd">
+            </div>
+            <div class="inputContainer">
+                <label for="telefono">Ingrese su telefono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="123456">
+            </div>
+            <input type="submit" value="Enviar" class="btn-enviar"/>
         </form>
+        <div id="contenedorContactos"></div>
     </main>
     
     <footer>
@@ -46,5 +56,6 @@
         </div>
             <p class="derechos-de-autor">® Todos los derechos reservados</p> 
     </footer>
+    <script src="./formulario.js"></script>
 </body>
 </html>
