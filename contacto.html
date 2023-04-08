@@ -5,37 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="./formulario.css">
+    <script src="https://kit.fontawesome.com/c6c7c177d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a class="titulo" href="index.html"> <img src="logo.png" > </a>       
+        <a class="titulo" href="index.html"> <img src="./logo.png" > </a>       
         <nav>
-            <a class="links" href="index.html">Inicio</a>
-            <a class="links" href="proximamente.html">Productos</a>
-            <a class="links" href="proximamente.html">Sobre Nosotros</a>
+            <a class = "links" href="./index.html">Inicio</a>
+            <a class = "links" href="">Productos</a>
+            <a class = "links" href="">Sobre Nosotros</a>
 
         </nav>
     </header> 
     
     <main>
-        <h2>Comunicate con nosotros</h2>
-        <form id="formularioContacto">
-            <div class="inputContainer">
-                <label for="nombre">Ingrese su nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan Fernandez">
-            </div>
-            <div class="inputContainer">
-                <label for="email">Ingrese su email:</label>
-                <input type="text" id="email" name="email" placeholder="asd@asd">
-            </div>
-            <div class="inputContainer">
-                <label for="telefono">Ingrese su telefono</label>
-                <input type="text" id="telefono" name="telefono" placeholder="123456">
-            </div>
-            <input type="submit" value="Enviar" class="btn-enviar"/>
-        </form>
-        <div id="contenedorContactos"></div>
+        <div class="contact-form">
+            <h2>Contactanos</h2>
+            <form id="contact-form">
+              <label for="name">Ingrese su Nombre:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Ingrese su Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="message">Ingrese su Mensaje</label>
+              <textarea id="message" name="message" required ></textarea>
+          
+              <button type="submit" id="submit-btn">Enviar</button>
+            </form>
+          </div>
+
+        
     </main>
     
     <footer>
@@ -43,19 +45,18 @@
             <div class="columna ancho-posible">
                 <h2 class="Tienda">Armonia Musical</h2>
                 <div>
-                    <a href="ubicacion.html">Donde Estamos</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="proximamente.html">Horarios</a>
+                    <a href="./ubicacion.html">Donde Estamos</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="">Horarios</a>
                 </div>
             </div>
             <div class="columna ancho-posible">
                 <h2 class="Atencion">Atencion al Cliente</h2>
-                <div>
-                    
-                    <a href="proximamente.html">Preguntas Frecuentes</a>
-                    <a href="proximamente.html">Atencion al cliente</a>
-                    <a href="comprar.html">¿Cómo comprar?</a>
-                    <a href="proximamente.html">Envios</a>
+                <div> 
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Atencion al cliente</a>
+                    <a href="./comprar.html">¿Cómo comprar?</a>
+                    <a href="">Envios</a>
                 </div>
             </div>
         </div>
@@ -63,6 +64,6 @@
             <p class="derechos-de-autor">® Todos los derechos reservados</p> 
         </div>
     </footer>
-    <script src="formulario.js"></script>
+    <script src="./formulario.js"></script>
 </body>
 </html>
