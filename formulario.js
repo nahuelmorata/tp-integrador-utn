@@ -1,28 +1,23 @@
-const formularioContacto = document.getElementById("formularioContacto")
-const contenedorContactosHTML = document.getElementById("contenedorContactos")
+const form = document.getElementById("contact-form");
+const submitButton = document.getElementById("submit-btn");
 
-const contactos = []
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-const mostrarContactos = () => {
-    contenedorContactosHTML.innerHTML = ""
-    for(const contacto of contactos){
-        contenedorContactosHTML.innerHTML += `
-        <div class="card-user">
-            <h2>Nombre: ${contacto.nombre}</h2>
-            <p>Email: ${contacto.email}</p>
-            <p>Telefono: ${contacto.telefono}</p>
-        <div/>
-        `
+  const formData = new FormData(form);
+  const xhr = new XMLHttpRequest();
+
+  xhr.open("POST", "submit-form.php", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      alert("Su mensaje a sido enviado!");
+      form.reset();
+    } else {
+      alert("El envío de su mensaje falló. Inténtalo de nuevo.");
     }
-}
+  };
 
-formularioContacto.addEventListener("submit", (event) =>{
-    event.preventDefault()
-    contactos.push({
-        nombre: formularioContacto.nombre.value,
-        email: formularioContacto.email.value,
-        telefono: formularioContacto.telefono.value
-    })
-    mostrarContactos()
-    formularioContacto.reset()
-})
+  xhr.send(new URLSearchParams(formData).toString());
+});
