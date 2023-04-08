@@ -11,6 +11,17 @@ body {
     flex-direction: column;
 }
 
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.carousel-item{
+    width: 600px;
+    height: 300px;
+    }
+
 header{
     background-color: rgb(3, 3, 75);
     display: flex;
