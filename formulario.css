@@ -5,37 +5,6 @@
   box-sizing: border-box;
 }
 
-header{
-  background-color: rgb(3, 3, 75);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-
-}
-
-.titulo img{
-  width: 100px;
-  border-radius: 100px;
-}
-
-header nav{
-  display:flex;
-  gap: 25px;
-  padding: 10px;
-}
-
-.links{
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-}
-
-header nav :hover  {
-  text-decoration: underline solid;
-  color: lightgray;
-}
 /* form */
 .contact-form {
     display: flex;
@@ -92,52 +61,3 @@ header nav :hover  {
   button[type="submit"]:hover {
     background-color: #3e8e41;
   }
-  /* footer */
-  footer{
-    background-color: rgb(3, 3, 75);
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.Tienda , .Atencion{
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-/*footer div, */a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer a{
-    text-decoration: none;
-    color: white;      
-}
-
-footer p{
-    padding-top: 20px;
-    text-align: center;
-    color:white;
-}
-
-.fila {
-    display: flex;
-}
-
-.columna {
-    display: flex;
-    flex-direction: column;
-}
-
-.columna.ancho-posible {
-    flex-grow: 1;
-}
-
-.centrado-horizontal-flex {
-    justify-content: center;
-}
