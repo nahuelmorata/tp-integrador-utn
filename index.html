@@ -30,15 +30,15 @@
         <a class="titulo" href="index.html"> <img src="./logo.png" > </a>
 
         <nav>
-            <a class = "links" href="./index.html">Inicio</a>
-            <a class = "links" href="">Productos</a>
-            <a class = "links" href="">Sobre Nosotros</a>
+            <a class="links" href="index.html">Inicio</a>
+            <a class="links" href="productos.html">Productos</a>
+            <a class="links" href="proximamente.html">Sobre Nosotros</a>
         </nav>
     </header>   
     
     <main>
         <h1 id="producto"></h1>
-        <section>
+        <section class="justify-content-center">
     <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,8 +68,8 @@
     </section>
     </main>
     <footer>
-        <div class="fila">
-            <div class="columna ancho-posible">
+        <div class="d-flex">
+            <div class="d-flex flex-column flex-grow-1">
                 <h2 class="Tienda">Armonia Musical</h2>
                 <div>
                     <a href="./ubicacion.html">Donde Estamos</a>
@@ -77,7 +77,7 @@
                     <a href="">Horarios</a>
                 </div>
             </div>
-            <div class="columna ancho-posible">
+            <div class="d-flex flex-column flex-grow-1">
                 <h2 class="Atencion">Atencion al Cliente</h2>
                 <div> 
                     <a href="">Preguntas Frecuentes</a>
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="fila centrado-horizontal-flex">
+        <div class="d-flex justify-content-center">
             <p class="derechos-de-autor">® Todos los derechos reservados</p> 
         </div>
     </footer>
