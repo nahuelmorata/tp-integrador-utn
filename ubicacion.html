@@ -10,12 +10,14 @@
 
 <body>
     <script src="script.js"></script>
-    <header>
-        <a class="titulo" href="index.html"> <img src="logo.png" > </a>
-
-        <nav>
+    <header class="navbar_header">
+        
+        <a class="titulo_img" href="index.html"> <img src="logo.png"> </a>
+        
+        <nav class="navbars">
+            
             <a class="links" href="index.html">Inicio</a>
-            <a class="links" href="proximamente.html">Productos</a>
+            <a class="links" href="./productos.html">Productos</a>
             <a class="links" href="proximamente.html">Sobre Nosotros</a>
         </nav>
     </header>   
@@ -26,18 +28,19 @@
     </main>
 
     <footer>
-        <div class="d-flex">
-            <div class="d-flex flex-column flex-grow-1">
-                <h2 class="Tienda">Armonia Musical</h2>
-                <div>
+        <div class="navbar_box">
+            <div>
+                <h2 class="titulo_footer">Armonia Musical</h2>
+                <div class="navbars_footer">
                     <a href="./ubicacion.html">Donde Estamos</a>
                     <a href="./contacto.html">Contacto</a>
                     <a href="">Horarios</a>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-grow-1">
-                <h2 class="Atencion">Atencion al Cliente</h2>
-                <div> 
+
+            <div>
+                <h2 class="titulo_footer">Atencion al Cliente</h2>
+                <div class="navbars_footer"> 
                     <a href="">Preguntas Frecuentes</a>
                     <a href="">Atencion al cliente</a>
                     <a href="./comprar.html">¿Cómo comprar?</a>
@@ -46,7 +49,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <p class="derechos-de-autor">® Todos los derechos reservados</p> 
+            <p>® Todos los derechos reservados</p> 
         </div>
     </footer>
 </body>
