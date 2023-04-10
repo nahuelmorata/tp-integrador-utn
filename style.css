@@ -25,12 +25,12 @@ header{
 
 }
 
-.titulo img{
-    width: 100px;
+.titulo_img img{
+    width: 90px;
     border-radius: 100px;
 }
 
-header nav{
+.navbars{
     display:flex;
     gap: 25px;
     padding: 10px;
@@ -43,7 +43,7 @@ header nav{
     font-weight: bold;
 }
 
-header nav :hover  {
+.navbars :hover  {
     text-decoration: underline solid;
     color: lightgray;
 }
@@ -69,13 +69,13 @@ footer{
     flex-direction: column;
 }
 
-.Tienda , .Atencion{
+.titulo_footer{
     text-align: center;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
-/*footer div, */a{
+.navbars_footer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,7 +83,11 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: white;      
+    color: white; 
+}
+
+footer a:hover{
+    color: blue;
 }
 
 footer p{
@@ -104,4 +108,48 @@ img {
     background-color: #dadada;
     border-radius: 10px;
     padding: 1rem;
+}
+
+.titulo_compras, .subtitulo_compras{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.caja{
+    display: grid;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+}
+
+.subcaja{
+    background-color: lightgray;
+    box-shadow: 5px 5px 15px black;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.navbar_box{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+    .navbar_box{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .navbar_header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbars a{
+        font-size: 17px;
+    }
+
+      
 }
