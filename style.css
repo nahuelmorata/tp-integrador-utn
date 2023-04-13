@@ -184,3 +184,27 @@ img {
     transition: ease-in 1s;
     opacity: 1;
 }
+.sobrenosContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.sobrenos-info{
+    padding: 2vw;
+}
+.sobrenos-info i{
+    font-size: 20px;
+    color: rgb(3, 3, 75);
+}
+.sobrenos-info button{
+    border: none;
+    background-color: white;
+}
+.sobrenos-mapa{
+    padding: 1vh 3vw;
+}
+.sobrenos-btn:hover{
+    transform: scale(1.03);
+    transition: ease-in 1s;
+}
