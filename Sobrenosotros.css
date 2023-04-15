@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #dbdbdb;
+  }
+  
+  .sobrenosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 1000px;
+  }
+  
+  .sobrenos-info {
+    flex-basis: 60%;
+    max-width: 60%;
+    padding-right: 40px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .sobrenos-btn {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(3, 3, 75);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  
+  .sobrenos-btn i {
+    vertical-align: middle;
+  }
+  
+  .integrantes {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .integrante {
+    border: 1px solid rgb(3, 3, 75);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .integrante img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+  
+  .integrante h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .integrante p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
