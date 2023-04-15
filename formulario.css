@@ -5,21 +5,66 @@
   box-sizing: border-box;
 }
 
+.contact-box{
+  background-color: #dbdbdb;  
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_map{
+  background-color: rgba(255, 255, 255, 0.518);
+  margin: 3em;
+}
+
+.informacion{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.518);
+}
+
+.datos{
+  padding-bottom: 20px;
+}
+
+.lista{
+  list-style: none;
+  padding-left: 20px;
+}
+
+main .mapa{
+  display: flex;
+  width: 30vw;
+  height: 40vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hola{
+  padding: 20px;
+}
+
 /* form */
 .contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 100px;
-    background-color: #dbdbdb;
+    
     width: 100%;
     height: 100%;
-    margin: 0;
+
+    
   }
+  
   main h2{
     font-size: 30px;
     line-height: 35px;
   }
+  
   form {
     display: flex;
     flex-direction: column;
@@ -61,7 +106,17 @@
   button[type="submit"]:hover {
     background-color: #3e8e41;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
+    .contact-box{
+      display: flex;
+      flex-direction: column;
+    }
+
+    main .mapa{
+      width: 60vw;
+      height: 40vh;
+    }
+
     .contact-form {
       padding: 3vw;
     }
