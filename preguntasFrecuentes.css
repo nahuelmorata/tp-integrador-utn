@@ -1,7 +1,9 @@
 .titulo-pf{
     text-align: center;
-    background-color: rgb(3, 3, 75);
-    color: white;
+    color: black;
+}
+main{
+    background-color:#dadada ;
 }
 
 
