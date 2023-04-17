@@ -10,6 +10,19 @@ body {
     display: flex;
     flex-direction: column;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+   width: 100%;
+   height: 100hv;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: sans-serif;
+}
 
 section{
     display: flex;
@@ -207,4 +220,69 @@ img {
 .sobrenos-btn:hover{
     transform: scale(1.03);
     transition: ease-in 1s;
+}
+
+/*Corousel*/
+.carousel-inner img {
+    width: 100%;
+    max-height: 900px;
+}
+
+.carousel-inner{
+ height: 800px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.categorias {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.contenedor {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease ;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translate(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card.contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.categoria a:hover {
+    background-color:  rgb(3, 3, 75);
+    transition: ease 1s;
+    color: #ffffff;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.categoria a{
+        text-align: center;
+        display: block;
+        padding: 1.25rem;
+        font-size: 1.25rem;
+}
+a {
+    text-decoration: none;
+    color: #000;
 }
